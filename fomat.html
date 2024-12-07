@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="forma.css"> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#about_me">Sobre Mim</a></li>
+                    <li><a href="#habilits">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- O Pop-Up  -->
+    <!-- <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close">&times;</span>
+            <h2>Bem-vindo ao Portfolio!</h2>
+            <p >Este é um exemplo de Portfolio simples.</p>
+            <p>Ele tem uma descrição sobre mim minhas habilidades e projetos, juntamente com meu contato no final !</p>
+        </div>
+    </div>
+
+     <script src="format.js"></script>Link para o arquivo JavaScript -->
+
+    <main>
+        <br/>
+        <!-- Seção de Boas-vindas -->
+        <section id="home">
+            <br/>
+            <br/>
+            <h2>Bem-vindo ao Portfolio!</h2>
+            <p>Este é um exemplo de Portfolio simples.</p>
+            <p>Ele tem uma descrição sobre mim, minhas habilidades e projetos, juntamente com meu contato no final!</p>
+        </section>
+
+        <!-- Seção Sobre Mim -->
+        <section id="about_me">
+            <br/>
+            <br/>
+            <h2>Sobre Mim</h2>
+            <h1 class="nome">Gustavo de Oliveira Borges</h1>
+            <br/>
+            <br/>
+            <img src="incones/user.webp" alt="Foto de Gustavo de Oliveira Borges" class="imagem">
+            <p class="paragrafo">
+                Sou estudante de Tecnólogo em Análise e Desenvolvimento de Sistemas, atualmente cursando o 3º período com término previsto para 2025. Tenho experiência anterior como operador de caixa e repositor, o que me proporcionou habilidades em atendimento ao cliente e trabalho em equipe. Possuo conhecimentos básicos em linguagens de programação como Java e Python, além de HTML e CSS, e habilidades em inglês e espanhol.
+            </p>
+            <p class="paragrafo">
+                Fui líder de um clube de horta e paisagismo na escola, que recomecei após ter sido esquecido, evidenciando minha capacidade de liderança e iniciativa. Sou uma pessoa flexível, determinada e esforçada, buscando oportunidades para aprender e crescer na área de TI. Estou atualmente em busca de um estágio ou posição inicial em tecnologia da informação onde possa aplicar meus conhecimentos e desenvolver novas habilidades.
+            </p>
+        </section>
+
+        <!-- Seção Habilidades -->
+        <section id="habilits">
+            <br/>
+            <br/>
+            <table>
+                <caption>Habilidades</caption>
+                <thead>
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Descrição</th>
+                        <th>Nível</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Linguagem de Programação</th>
+                        <td>Java</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Desenvolvimento Web</th>
+                        <td>HTML</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Idiomas</th>
+                        <td>Inglês</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Espanhol</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Soft Skills</th>
+                        <td>Flexibilidade</td>
+                        <td>Intermediário</td>
+                    </tr>
+                    <tr>
+                        <td>Determinação</td>
+                        <td>Intermediário</td>
+                    </tr>
+                    <tr>
+                        <td>Trabalho em Equipe</td>
+                        <td>Intermediário</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projects">
+            <br/>
+            <br/>
+            <h2>Meus Projetos</h2>
+            <div class="container1">
+                <a href="https://github.com/GustavoBorge/Easter-Eggs-em-Jogos-de-V-deo-Game.git" target="_blank" class="box box1">
+                    <img src="incones/nest.gif" alt="Projeto Easter Eggs" class="icones">
+                </a>
+                <a href="#" target="_blank" class="box box2">
+                    <img src="incones/barbershop.png" alt="Projeto Barbearia" class="icones">
+                </a>
+                <a href="fomat.html" target="_blank" class="box box3">
+                    <img src="incones/profile.gif" alt="Projeto Profile" class="icones">
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact">
+            <br/>
+            <br/>
+            <h2>Casdatre-se para entrar em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Informe seu nome" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Informe um email válido" required>
+                
+                <label for="assunto">Motivo</label>
+                <select name="assunto" id="assunto" required>
+                    <option value="" disabled selected>Selecione o motivo</option>
+                    <option value="Pessoal">Pessoal</option>
+                    <option value="Empresarial">Empresarial</option>
+                    <option value="Social">Social</option>
+                </select>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="main-footer">
+        <ul class="footer-list">
+            <li class="footer-item">
+                <a href="https://wa.me/5562981222882" class="footer-link">
+                    <img src="incones/whatsapp-brands-solid.svg" alt="Ícone do WhatsApp" class="footer-icon">
+                    WhatsApp
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.instagram.com/ggeasyfacild?utm_source=qr&igsh=ampwcXh0eHF1cWds" class="footer-link">
+                    <img src="incones/instagram-brands-solid.svg" alt="Ícone do Instagram" class="footer-icon">
+                    Instagram
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://github.com/GustavoBorge" class="footer-link">
+                    <img src="incones/github-brands-solid.svg" alt="Ícone do GitHub" class="footer-icon">
+                    GitHub
+                </a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.linkedin.com/in/gustavo-oliveira-borges-6b952b212/" target="_blank" class="footer-link">
+                    <img src="incones/linkedin-brands-solid.svg" alt="Ícone do LinkedIn" class="footer-icon">
+                    LinkedIn
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

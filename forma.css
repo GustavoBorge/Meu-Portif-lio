@@ -1,0 +1,360 @@
+/* Reset básico para garantir uma base consistente entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Arial', serif;
+    font-weight: normal;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+/* Container principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #333333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* Altura do header */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+/* Estilo das seções */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo específico do About Me */
+#about_me {
+    position: relative;
+}
+
+#about_me .nome {
+    font-size: 2.5rem;
+    line-height: 1.4;
+    font-family: 'Sans-Serif', sans-serif;
+    padding-top: 5%;
+    margin-bottom: 1rem;
+}
+
+#about_me .paragrafo {
+    font-family: 'Serif', serif;
+    margin-top: 1rem;
+}
+
+#about_me .imagem {
+    max-width: 25%;
+    height: auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+}
+
+/* Estilo geral do section #habilits */
+#habilits {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #fff; /* Adicionei um fundo claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(244, 244, 244);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do caption */
+caption {
+    font-size: 1.5em;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilo das células do thead */
+thead th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+}
+
+/* Estilo das células do tbody */
+tbody td, tbody th {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para as linhas alternadas do tbody */
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Estilo para a primeira coluna com rowspan */
+tbody th {
+    background-color: #e9ecef;
+    font-weight: normal;
+    text-align: left;
+}
+
+/* Estilo das células com rowspan */
+tbody th[rowspan] {
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Estilo das células com conteúdo */
+tbody td {
+    text-align: center;
+}
+
+/* Estilo para o hover nas linhas */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Seção de Projetos */
+.container1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #fff; /* Adiciona uma cor de fundo para contraste */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.icones {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilização do footer */
+#main-footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #about_me .imagem {
+        position: static;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .container1 {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+}
+/* Estilo do pop-up */
+.popup {
+    display: none; /* Oculto por padrão */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro com opacidade */
+    z-index: 1000; /* Para ficar acima de outros conteúdos */
+}
+
+/* Conteúdo do pop-up */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza verticalmente */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Largura do pop-up */
+    max-width: 600px; /* Largura máxima */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Botão de fechar do pop-up */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
